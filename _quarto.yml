@@ -5,7 +5,7 @@ project:
 website:
   title: "Peter Olejua"
   site-url: https://peterolejua.github.io
-  description: "Biostatistician working on functional data, wearable devices, and scalable Bayesian methods."
+  description: "Biostatistician working on functional data, intensive longitudinal data, and scalable Bayesian methods."
   navbar:
     left:
       - href: index.qmd

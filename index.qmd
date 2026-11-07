@@ -1,6 +1,6 @@
 ---
 title: "Peter Olejua"
-subtitle: "Biostatistician developing methods for wearable and digital health data"
+subtitle: "Biostatistician developing functional data and Bayesian methods for public health"
 about:
   template: trestles
   image: images/profile.jpg
@@ -35,10 +35,15 @@ I am a Ph.D. candidate in Biostatistics at the Arnold School of Public Health, U
 South Carolina, advised by Dr. Alexander McLain. I expect to graduate in May 2027. I live in
 the Dallas–Fort Worth area of Texas.
 
-My work is in **functional data analysis** and **scalable Bayesian methods**. Wearable devices
-record activity minute by minute, for days or weeks, so each person gives a curve instead of a
-single number. I develop and apply methods that use the whole curve, and I write them as
-software that other people can use.
+My work is in **functional data analysis** and **scalable Bayesian methods**. Many health
+studies now measure each person many times, over a day or over years, so each person gives a
+curve or a distribution instead of a single number. I develop methods that use the whole curve,
+test them with simulation studies, apply them to real data, and write them as software that
+other people can use.
+
+I am open to many different applications of these methods: from wearable data to genomics,
+nutrition, agriculture, air pollution, and many other applications. So far, I have applied them
+to wearable accelerometer data and genomic data.
 
 ## What I work on
 
@@ -75,9 +80,10 @@ measuring the bias of non-wear imputation.
 ## Where I am going
 
 I want to see statistical methods used in the world, not only published. My goal is to work
-with functional data from wearable devices, developing methods and applying my own methods and
-those of others, so that practitioners can use them. That can happen in academia or in a
-company that builds wearable devices. More in [my own words](story.qmd).
+with functional and intensive longitudinal data, from wearable devices or other sources,
+developing methods and applying my own methods and those of others, so that practitioners can
+use them. That can happen in academia or in industry, for example in a company that builds
+wearable devices. More in [my own words](story.qmd).
 
 ## Education
 
