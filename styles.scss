@@ -1,0 +1,47 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&family=Noto+Serif:wght@400;700&display=swap');
+
+$garnet: #73000A;
+$primary: $garnet;
+$link-color: $garnet;
+$body-color: #222222;
+$font-family-sans-serif: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Noto Serif", Georgia, serif;
+$navbar-bg: #ffffff;
+$navbar-fg: #333333;
+$navbar-hl: $garnet;
+$footer-bg: #ffffff;
+
+/*-- scss:rules --*/
+body { font-weight: 400; line-height: 1.65; }
+
+h2 {
+  border-bottom: 2px solid $garnet;
+  padding-bottom: 0.2rem;
+  margin-top: 2.2rem;
+}
+
+.navbar { border-top: 4px solid $garnet; border-bottom: 1px solid #eeeeee; }
+
+blockquote {
+  border-left: 4px solid $garnet;
+  font-family: $headings-font-family;
+  font-style: italic;
+  color: #444444;
+}
+
+.lead-line { font-size: 1.2rem; color: #444444; }
+
+.card-row { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+.card-row .item {
+  flex: 1 1 15rem;
+  border: 1px solid #e6e6e6;
+  border-top: 3px solid $garnet;
+  border-radius: 4px;
+  padding: 0.9rem 1rem;
+}
+.card-row .item h4 { margin-top: 0; font-size: 1.05rem; }
+
+.pub { margin-bottom: 0.8rem; }
+.pub .venue { font-style: italic; }
+.me { font-weight: 600; }

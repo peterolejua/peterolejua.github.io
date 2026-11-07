@@ -1,0 +1,79 @@
+---
+title: "Research"
+---
+
+## Dissertation: variational Bayes for sparse and functional regression
+
+Bayesian variable selection with spike-and-slab priors gives a probability that each predictor
+belongs in the model. Markov chain Monte Carlo is slow when there are thousands of predictors,
+so variational Bayes (VB) is used instead. Standard VB has two weak points in this setting: its
+results depend strongly on the prior settings, and its predictions are often poorly calibrated,
+i.e. they are biased toward the mean. My dissertation, with Dr. Alexander McLain, develops VB
+methods that stay fast and fix these problems.
+
+1. **Parameter expanded VB** for spike-and-slab linear regression. Preprint on Research Square;
+   under review at *Statistics and Computing*. Software: [`spexvb`](software.qmd) on CRAN.
+2. **Parameter exploded VB** for sparse high-dimensional linear regression. In preparation.
+   Software: [`spxlvb`](https://github.com/peterolejua/spxlvb).
+3. **VB for scalar-on-function regression.** In progress. The predictor is a curve, such as a
+   day of accelerometer data, expanded in a basis. This project carries the ideas of the first
+   two projects to functional predictors.
+
+### The problem and the first result
+
+The first figure below shows the calibration problem with simulated data. In panel (a),
+the predictions from standard VB are pulled toward zero, because the points lie on a flatter
+line than the 45° line. In panel (b), the calibration coefficient α~c~ (black line; α~c~ ≈ 1
+means good calibration) and the MSE (gray line) both change with the prior precision τ~b~. So,
+the user of standard VB must choose τ~b~ well to get good predictions.
+
+Our method, `spexvb`, adds parameter expansion to VB. The second figure compares how much
+the test-set MSE changes across five values of τ~b~. We see that the range for `spexvb` (red)
+is much smaller than for `sparsevb` (black), the standard VB method, in every scenario. So,
+`spexvb` depends much less on the prior setting.
+
+::: {layout="[[56,44]]"}
+![Standard VB with simulated data: (a) true versus estimated E(y) for √τ~b~ = 3.3; (b)
+calibration coefficient α~c~ (solid black), MSE (solid gray, rescaled), and the difference
+between the estimated and true number of non-zero coefficients (dashed) by √τ~b~.](images/pxvb_calibration.png){fig-alt="Two panels. Left: estimated versus true expected outcome, with points on a line flatter than the diagonal. Right: calibration coefficient and MSE increasing with the square root of the prior precision."}
+
+![Range (maximum minus minimum) of test-set MSE over τ~b~^1/2^ ∈ {1/20, 1/4, 1, 4, 20},
+n = 200, by number of groups with non-zero signals; centers are means and whiskers ±1
+SD.](images/pxvb_robustness.png){fig-alt="Eight panels comparing sparsevb in black and spexvb in red. In every panel the red ranges are much smaller than the black ones."}
+:::
+
+Figures from Olejua, Saha, Ghosal, Bai, and McLain (2025),
+[Research Square preprint](https://doi.org/10.21203/rs.3.rs-7208847/v1), licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+### Methods and data
+The methods are evaluated with factorial simulation studies on a high-performance computing
+cluster, and applied to genomic and wearable data.
+
+## Wearable and accelerometer data
+
+- **Clustering 24-hour physical activity in young children.** We clustered hourly activity
+  curves of children 6 to 36 months old with model-based functional clustering.
+  *Pediatric Exercise Science*, 2025 (first author).
+- **Non-wear imputation in GGIR.** We measured the bias of GGIR's non-wear imputation by
+  imposing real non-wear patterns on complete wrist accelerometer recordings. Along the way,
+  two of my fixes were merged into the GGIR package.
+- **Walking and cognition in Parkinson's disease.** Longitudinal mixed models of changes in
+  walking and cognition by motor subtype. *Parkinsonism & Related Disorders*, 2026 (first
+  author).
+
+## High-dimensional mixed models
+
+- `lmmprobe` fits sparse high-dimensional linear mixed models with a partitioned empirical
+  Bayes ECM algorithm, developed by Dr. Anja Zgodic and co-authors (*Statistics and Computing*,
+  2025). My contribution was to the software: I optimized the R package by rewriting its core
+  routines in C++ with OpenMP.
+
+## Before the Ph.D.
+
+From 2018 to 2021 I was the biostatistician of the research office at Hospital Universitario
+San Ignacio in Bogotá. I built clinical prediction models (emergency room mortality, high-flow
+nasal cannula failure in COVID-19 pneumonia), designed patient registries in REDCap, and
+co-authored papers in cardiology, infectious disease, and pulmonology. Before that I spent
+about seven years in banking and consulting, building credit scoring and money-laundering
+risk models.

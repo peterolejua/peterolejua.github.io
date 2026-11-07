@@ -1,0 +1,86 @@
+---
+title: "Peter Olejua"
+subtitle: "Biostatistician developing methods for wearable and digital health data"
+about:
+  template: trestles
+  image: images/profile.jpg
+  image-width: 16em
+  links:
+    - icon: file-earmark-person
+      text: CV
+      href: files/Olejua_CV.pdf
+    - icon: github
+      text: GitHub
+      href: https://github.com/peterolejua
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/peterolejua/
+    - icon: mortarboard
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=GDKI_XwAAAAJ&hl=en
+    - icon: person-badge
+      text: ORCID
+      href: https://orcid.org/0000-0002-2478-0908
+    - icon: envelope
+      text: Email
+      href: mailto:polejua@email.sc.edu
+---
+
+::: {.callout-note appearance="simple" icon=false}
+**I am on the job market** for postdoctoral and research scientist positions starting in 2027.
+If my work fits your group, please [get in touch](mailto:polejua@email.sc.edu).
+:::
+
+I am a Ph.D. candidate in Biostatistics at the Arnold School of Public Health, University of
+South Carolina, advised by Dr. Alexander McLain. I expect to graduate in May 2027. I live in
+the Dallas–Fort Worth area of Texas.
+
+My work is in **functional data analysis** and **scalable Bayesian methods**. Wearable devices
+record activity minute by minute, for days or weeks, so each person gives a curve instead of a
+single number. I develop and apply methods that use the whole curve, and I write them as
+software that other people can use.
+
+## What I work on
+
+::: {.card-row}
+::: {.item}
+#### Variational Bayes for high-dimensional regression
+Fast Bayesian variable selection with spike-and-slab priors that keeps the uncertainty
+honest. R package `spexvb` on CRAN.
+:::
+::: {.item}
+#### Scalar-on-function regression
+Bayesian regression where the predictor is a curve, for example 24-hour activity from a
+wrist accelerometer.
+:::
+::: {.item}
+#### Wearable and accelerometer data
+Clustering 24-hour activity patterns, processing raw accelerometer data with GGIR, and
+measuring the bias of non-wear imputation.
+:::
+:::
+
+## News
+
+- **Jul 2026.** Two of my pull requests were merged into the GGIR accelerometer package
+  ([#1522](https://github.com/wadpac/GGIR/pull/1522), [#1523](https://github.com/wadpac/GGIR/pull/1523)).
+- **2026.** Our paper on walking and cognition in Parkinson's disease was published in
+  *Parkinsonism & Related Disorders* ([doi](https://doi.org/10.1016/j.parkreldis.2026.108395)).
+- **2026.** Reviewer for *Statistics in Medicine*.
+- **Feb 2026.** [`spexvb`](https://CRAN.R-project.org/package=spexvb) was released on CRAN.
+- **Sep 2025.** Featured in the Arnold School's
+  [I Am Public Health](https://www.sc.edu/study/colleges_schools/public_health/about/news/2025/iampublichealth_olejua_bios.php)
+  series.
+
+## Where I am going
+
+I want to see statistical methods used in the world, not only published. My goal is to work
+with functional data from wearable devices, developing methods and applying my own methods and
+those of others, so that practitioners can use them. That can happen in academia or in a
+company that builds wearable devices. More in [my own words](story.qmd).
+
+## Education
+
+- **Ph.D. in Biostatistics**, University of South Carolina, expected May 2027
+- **M.Sc. in Biostatistics**, Pontificia Universidad Javeriana, Bogotá, Colombia, 2020
+- **B.Sc. in Mathematics**, Universidad Simón Bolívar, Caracas, Venezuela, 2013

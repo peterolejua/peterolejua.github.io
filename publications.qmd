@@ -1,0 +1,68 @@
+---
+title: "Publications"
+---
+
+My name is in bold. The full record is on [ORCID](https://orcid.org/0000-0002-2478-0908) and [Google Scholar](https://scholar.google.com/citations?user=GDKI_XwAAAAJ&hl=en).
+
+## Statistical methodology
+
+- Zgodic, A., Bai, R., Zhang, J., **Olejua, P.**, and McLain, A. C. (2025). Sparse
+  high-dimensional linear mixed modeling with a partitioned empirical Bayes ECM algorithm.
+  *Statistics and Computing*, 35(4), 109.
+  [Paper](https://doi.org/10.1007/s11222-025-10649-z){.btn .btn-outline-primary .btn-sm}
+  [R package](https://CRAN.R-project.org/package=lmmprobe){.btn .btn-outline-primary .btn-sm}
+
+## Under review and in preparation
+
+- **Olejua, P.**, Saha, E., Ghosal, R., Bai, R., and McLain, A. C. (2025). Parameter expanded
+  variational Bayes for well-calibrated high-dimensional linear regression with spike-and-slab
+  priors. Preprint, Research Square; under review at *Statistics and Computing*.
+  [Preprint](https://doi.org/10.21203/rs.3.rs-7208847/v1){.btn .btn-outline-primary .btn-sm}
+  [R package](https://CRAN.R-project.org/package=spexvb){.btn .btn-outline-primary .btn-sm}
+  [Python port](https://github.com/peterolejua/py-spexvb){.btn .btn-outline-primary .btn-sm}
+- **Olejua, P.**, Saha, E., Ghosal, R., Bai, R., and McLain, A. C. Parameter exploded
+  variational Bayes for sparse high-dimensional linear regression. In preparation.
+  [R package](https://github.com/peterolejua/spxlvb){.btn .btn-outline-primary .btn-sm}
+
+## Applied and collaborative research
+
+- **Olejua, P.**, McLain, A. C., Ghosal, R., Regan, E., and Flach, A. (2026). Longitudinal study
+  of changes in walking and cognition by motor subtype of Parkinson's disease. *Parkinsonism &
+  Related Disorders*, 149, 108395.
+  [Paper](https://doi.org/10.1016/j.parkreldis.2026.108395){.btn .btn-outline-primary .btn-sm}
+- **Olejua, P.**, McLain, A. C., Inak, N., Dowda, M., and Pate, R. R. (2025). Clustering
+  patterns of 24-hour physical activity in children 6–36 months old. *Pediatric Exercise
+  Science*, 37(1), 29–36.
+  [Paper](https://doi.org/10.1123/pes.2023-0055){.btn .btn-outline-primary .btn-sm}
+- Quijano, D., Ali, A., Arevalo, Y., **Olejua, P.**, and Trujillo, J. (2022). Validation of the
+  Spanish language version of the Control of Allergic Rhinitis and Asthma Test. *npj Primary
+  Care Respiratory Medicine*, 32(1), 47.
+  [doi:10.1038/s41533-022-00313-8](https://doi.org/10.1038/s41533-022-00313-8)
+- García-Peña, Á. A., De-Vries, E., Aldana-Bitar, J., Cáceres, E., Botero, J., Vásquez-Jiménez,
+  J., Tamara, R., and **Olejua, P.** (2022). Cardiovascular risk prediction models in people
+  living with HIV in Colombia. *Revista de Investigación Clínica*, 74(1), 23–30.
+  [doi:10.24875/ric.21000251](https://doi.org/10.24875/ric.21000251)
+- Valencia, C. F., Lucero, O. D., Castro, O. C., Sanko, A. A., and **Olejua, P. A.** (2021).
+  Comparison of ROX and HACOR scales to predict high-flow nasal cannula failure in patients with
+  SARS-CoV-2 pneumonia. *Scientific Reports*, 11, 22559.
+  [doi:10.1038/s41598-021-02078-5](https://doi.org/10.1038/s41598-021-02078-5)
+- Murillo, R., Gamboa, O., Hernández, G., González, M., **Olejua, P.**, Molano, M., and
+  Wiesner, C. (2021). Accuracy of combined molecular and morphology-based triage for
+  HPV-positive women in routine cervical cancer screening services from Colombia. *Preventive
+  Medicine*, 153, 106801.
+  [doi:10.1016/j.ypmed.2021.106801](https://doi.org/10.1016/j.ypmed.2021.106801)
+- Caicedo-Martínez, M., Fernández-Deaza, G., Ordóñez-Reyes, C., **Olejua, P.**,
+  Nuche-Berenguer, B., Mello, M. B., and Murillo, R. (2021). High-risk human papillomavirus
+  infection among women living with HIV in Latin America and the Caribbean: a systematic review
+  and meta-analysis. *International Journal of STD & AIDS*, 32(14), 1278–1289.
+  [doi:10.1177/09564624211037498](https://doi.org/10.1177/09564624211037498)
+- Jiménez Cruz, C. A., **Olejua, P.**, et al. (2021). Propuesta de modelo de predicción de
+  mortalidad complementario al triaje en un hospital universitario en Bogotá (Colombia).
+  *Universitas Médica*, 62(3).
+  [doi:10.11144/javeriana.umed62-3.tria](https://doi.org/10.11144/javeriana.umed62-3.tria)
+- Barbosa, S., Muñoz, O. M., Cañas Arboleda, A., García, Á. A., **Olejua, P. A.**, and Díaz, M.
+  (2022). Cambio en la mortalidad intrahospitalaria durante el primer pico por SARS-CoV-2 en
+  Bogotá, Colombia. *Infectio*, 26(2), 156–160.
+  [doi:10.22354/in.v26i2.1015](https://doi.org/10.22354/in.v26i2.1015)
+- Other collaborative papers from my years at Hospital Universitario San Ignacio are listed on
+  [ORCID](https://orcid.org/0000-0002-2478-0908) and in my CV.

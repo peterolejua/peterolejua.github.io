@@ -1,0 +1,51 @@
+---
+title: "In my words"
+subtitle: "A few questions people ask me"
+---
+
+### Where do you come from?
+
+I am the son of Venezuelan and Colombian parents. I studied mathematics at Universidad Simón
+Bolívar in Caracas, and I grew up between two cultures, which helps me understand people who
+see things differently.
+
+### How did you get from mathematics to health?
+
+I spent about ten years applying mathematics to real problems. First in banking, measuring
+credit risk and screening for money laundering. Then I moved to health: I did a master's in
+biostatistics in Bogotá and worked as the biostatistician of a university hospital, through
+the COVID-19 pandemic.
+
+### What do you work on now?
+
+Functional data from wearable devices. A wrist accelerometer records how a person moves,
+minute by minute, for days. Each person gives a curve, not a number. I work on Bayesian methods
+that can use the whole curve and still run fast, and I write them as R packages so that other
+people can use them.
+
+### Where do you see yourself in five years?
+
+I want to see the impact of research in the world. Many methods are published and then not
+used. I would like my methods to be used by practitioners, and I would like to apply good
+methods, mine or someone else's, to real problems. That can be in academia or in a company that
+builds wearable devices. Functional data is an active field, with a lot still to develop, and
+that is what I want to keep doing.
+
+### Who shaped you as a researcher?
+
+My advisor, Dr. Alexander McLain. As I said in my
+[USC profile](https://www.sc.edu/study/colleges_schools/public_health/about/news/2025/iampublichealth_olejua_bios.php):
+
+> What I admire most about Dr. McLain is his remarkable ability to adapt to anyone at their level
+> in order to help them complete their research. He possesses a unique talent for breaking down
+> complex concepts, providing guidance that is tailored to individual needs, and fostering an
+> environment where curiosity and intellectual growth thrive.
+
+### And outside work?
+
+I dance Kizomba and Semba.
+
+---
+
+Read the full story: [I Am Public Health: Peter Olejua](https://www.sc.edu/study/colleges_schools/public_health/about/news/2025/iampublichealth_olejua_bios.php),
+Arnold School of Public Health, September 2025.

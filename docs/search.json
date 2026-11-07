@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Bayesian variable selection with spike-and-slab priors gives a probability that each predictor belongs in the model. Markov chain Monte Carlo is slow when there are thousands of predictors, so variational Bayes (VB) is used instead. Standard VB has two weak points in this setting: its results depend strongly on the prior settings, and its predictions are often poorly calibrated, i.e. they are biased toward the mean. My dissertation, with Dr. Alexander McLain, develops VB methods that stay fast and fix these problems.\n\nParameter expanded VB for spike-and-slab linear regression. Preprint on Research Square; under review at Statistics and Computing. Software: spexvb on CRAN.\nParameter exploded VB for sparse high-dimensional linear regression. In preparation. Software: spxlvb.\nVB for scalar-on-function regression. In progress. The predictor is a curve, such as a day of accelerometer data, expanded in a basis. This project carries the ideas of the first two projects to functional predictors.\n\n\n\nThe first figure below shows the calibration problem with simulated data. In panel (a), the predictions from standard VB are pulled toward zero, because the points lie on a flatter line than the 45° line. In panel (b), the calibration coefficient αc (black line; αc ≈ 1 means good calibration) and the MSE (gray line) both change with the prior precision τb. So, the user of standard VB must choose τb well to get good predictions.\nOur method, spexvb, adds parameter expansion to VB. The second figure compares how much the test-set MSE changes across five values of τb. We see that the range for spexvb (red) is much smaller than for sparsevb (black), the standard VB method, in every scenario. So, spexvb depends much less on the prior setting.\n\n\n\n\n\n\nStandard VB with simulated data: (a) true versus estimated E(y) for √τb = 3.3; (b) calibration coefficient αc (solid black), MSE (solid gray, rescaled), and the difference between the estimated and true number of non-zero coefficients (dashed) by √τb.\n\n\n\n\n\n\n\nRange (maximum minus minimum) of test-set MSE over τb1/2 ∈ {1/20, 1/4, 1, 4, 20}, n = 200, by number of groups with non-zero signals; centers are means and whiskers ±1 SD.\n\n\n\n\n\nFigures from Olejua, Saha, Ghosal, Bai, and McLain (2025), Research Square preprint, licensed CC BY 4.0.\n\n\n\nThe methods are evaluated with factorial simulation studies on a high-performance computing cluster, and applied to genomic and wearable data."
+  },
+  {
+    "objectID": "research.html#dissertation-variational-bayes-for-sparse-and-functional-regression",
+    "href": "research.html#dissertation-variational-bayes-for-sparse-and-functional-regression",
+    "title": "Research",
+    "section": "",
+    "text": "Bayesian variable selection with spike-and-slab priors gives a probability that each predictor belongs in the model. Markov chain Monte Carlo is slow when there are thousands of predictors, so variational Bayes (VB) is used instead. Standard VB has two weak points in this setting: its results depend strongly on the prior settings, and its predictions are often poorly calibrated, i.e. they are biased toward the mean. My dissertation, with Dr. Alexander McLain, develops VB methods that stay fast and fix these problems.\n\nParameter expanded VB for spike-and-slab linear regression. Preprint on Research Square; under review at Statistics and Computing. Software: spexvb on CRAN.\nParameter exploded VB for sparse high-dimensional linear regression. In preparation. Software: spxlvb.\nVB for scalar-on-function regression. In progress. The predictor is a curve, such as a day of accelerometer data, expanded in a basis. This project carries the ideas of the first two projects to functional predictors.\n\n\n\nThe first figure below shows the calibration problem with simulated data. In panel (a), the predictions from standard VB are pulled toward zero, because the points lie on a flatter line than the 45° line. In panel (b), the calibration coefficient αc (black line; αc ≈ 1 means good calibration) and the MSE (gray line) both change with the prior precision τb. So, the user of standard VB must choose τb well to get good predictions.\nOur method, spexvb, adds parameter expansion to VB. The second figure compares how much the test-set MSE changes across five values of τb. We see that the range for spexvb (red) is much smaller than for sparsevb (black), the standard VB method, in every scenario. So, spexvb depends much less on the prior setting.\n\n\n\n\n\n\nStandard VB with simulated data: (a) true versus estimated E(y) for √τb = 3.3; (b) calibration coefficient αc (solid black), MSE (solid gray, rescaled), and the difference between the estimated and true number of non-zero coefficients (dashed) by √τb.\n\n\n\n\n\n\n\nRange (maximum minus minimum) of test-set MSE over τb1/2 ∈ {1/20, 1/4, 1, 4, 20}, n = 200, by number of groups with non-zero signals; centers are means and whiskers ±1 SD.\n\n\n\n\n\nFigures from Olejua, Saha, Ghosal, Bai, and McLain (2025), Research Square preprint, licensed CC BY 4.0.\n\n\n\nThe methods are evaluated with factorial simulation studies on a high-performance computing cluster, and applied to genomic and wearable data."
+  },
+  {
+    "objectID": "research.html#wearable-and-accelerometer-data",
+    "href": "research.html#wearable-and-accelerometer-data",
+    "title": "Research",
+    "section": "Wearable and accelerometer data",
+    "text": "Wearable and accelerometer data\n\nClustering 24-hour physical activity in young children. We clustered hourly activity curves of children 6 to 36 months old with model-based functional clustering. Pediatric Exercise Science, 2025 (first author).\nNon-wear imputation in GGIR. We measured the bias of GGIR’s non-wear imputation by imposing real non-wear patterns on complete wrist accelerometer recordings. Along the way, two of my fixes were merged into the GGIR package.\nWalking and cognition in Parkinson’s disease. Longitudinal mixed models of changes in walking and cognition by motor subtype. Parkinsonism & Related Disorders, 2026 (first author)."
+  },
+  {
+    "objectID": "research.html#high-dimensional-mixed-models",
+    "href": "research.html#high-dimensional-mixed-models",
+    "title": "Research",
+    "section": "High-dimensional mixed models",
+    "text": "High-dimensional mixed models\n\nlmmprobe fits sparse high-dimensional linear mixed models with a partitioned empirical Bayes ECM algorithm, developed by Dr. Anja Zgodic and co-authors (Statistics and Computing, 2025). My contribution was to the software: I optimized the R package by rewriting its core routines in C++ with OpenMP."
+  },
+  {
+    "objectID": "research.html#before-the-ph.d.",
+    "href": "research.html#before-the-ph.d.",
+    "title": "Research",
+    "section": "Before the Ph.D.",
+    "text": "Before the Ph.D.\nFrom 2018 to 2021 I was the biostatistician of the research office at Hospital Universitario San Ignacio in Bogotá. I built clinical prediction models (emergency room mortality, high-flow nasal cannula failure in COVID-19 pneumonia), designed patient registries in REDCap, and co-authored papers in cardiology, infectious disease, and pulmonology. Before that I spent about seven years in banking and consulting, building credit scoring and money-laundering risk models."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "My name is in bold. The full record is on ORCID and Google Scholar."
+  },
+  {
+    "objectID": "publications.html#statistical-methodology",
+    "href": "publications.html#statistical-methodology",
+    "title": "Publications",
+    "section": "Statistical methodology",
+    "text": "Statistical methodology\n\nZgodic, A., Bai, R., Zhang, J., Olejua, P., and McLain, A. C. (2025). Sparse high-dimensional linear mixed modeling with a partitioned empirical Bayes ECM algorithm. Statistics and Computing, 35(4), 109. Paper R package"
+  },
+  {
+    "objectID": "publications.html#under-review-and-in-preparation",
+    "href": "publications.html#under-review-and-in-preparation",
+    "title": "Publications",
+    "section": "Under review and in preparation",
+    "text": "Under review and in preparation\n\nOlejua, P., Saha, E., Ghosal, R., Bai, R., and McLain, A. C. (2025). Parameter expanded variational Bayes for well-calibrated high-dimensional linear regression with spike-and-slab priors. Preprint, Research Square; under review at Statistics and Computing. Preprint R package Python port\nOlejua, P., Saha, E., Ghosal, R., Bai, R., and McLain, A. C. Parameter exploded variational Bayes for sparse high-dimensional linear regression. In preparation. R package"
+  },
+  {
+    "objectID": "publications.html#applied-and-collaborative-research",
+    "href": "publications.html#applied-and-collaborative-research",
+    "title": "Publications",
+    "section": "Applied and collaborative research",
+    "text": "Applied and collaborative research\n\nOlejua, P., McLain, A. C., Ghosal, R., Regan, E., and Flach, A. (2026). Longitudinal study of changes in walking and cognition by motor subtype of Parkinson’s disease. Parkinsonism & Related Disorders, 149, 108395. Paper\nOlejua, P., McLain, A. C., Inak, N., Dowda, M., and Pate, R. R. (2025). Clustering patterns of 24-hour physical activity in children 6–36 months old. Pediatric Exercise Science, 37(1), 29–36. Paper\nQuijano, D., Ali, A., Arevalo, Y., Olejua, P., and Trujillo, J. (2022). Validation of the Spanish language version of the Control of Allergic Rhinitis and Asthma Test. npj Primary Care Respiratory Medicine, 32(1), 47. doi:10.1038/s41533-022-00313-8\nGarcía-Peña, Á. A., De-Vries, E., Aldana-Bitar, J., Cáceres, E., Botero, J., Vásquez-Jiménez, J., Tamara, R., and Olejua, P. (2022). Cardiovascular risk prediction models in people living with HIV in Colombia. Revista de Investigación Clínica, 74(1), 23–30. doi:10.24875/ric.21000251\nValencia, C. F., Lucero, O. D., Castro, O. C., Sanko, A. A., and Olejua, P. A. (2021). Comparison of ROX and HACOR scales to predict high-flow nasal cannula failure in patients with SARS-CoV-2 pneumonia. Scientific Reports, 11, 22559. doi:10.1038/s41598-021-02078-5\nMurillo, R., Gamboa, O., Hernández, G., González, M., Olejua, P., Molano, M., and Wiesner, C. (2021). Accuracy of combined molecular and morphology-based triage for HPV-positive women in routine cervical cancer screening services from Colombia. Preventive Medicine, 153, 106801. doi:10.1016/j.ypmed.2021.106801\nCaicedo-Martínez, M., Fernández-Deaza, G., Ordóñez-Reyes, C., Olejua, P., Nuche-Berenguer, B., Mello, M. B., and Murillo, R. (2021). High-risk human papillomavirus infection among women living with HIV in Latin America and the Caribbean: a systematic review and meta-analysis. International Journal of STD & AIDS, 32(14), 1278–1289. doi:10.1177/09564624211037498\nJiménez Cruz, C. A., Olejua, P., et al. (2021). Propuesta de modelo de predicción de mortalidad complementario al triaje en un hospital universitario en Bogotá (Colombia). Universitas Médica, 62(3). doi:10.11144/javeriana.umed62-3.tria\nBarbosa, S., Muñoz, O. M., Cañas Arboleda, A., García, Á. A., Olejua, P. A., and Díaz, M. (2022). Cambio en la mortalidad intrahospitalaria durante el primer pico por SARS-CoV-2 en Bogotá, Colombia. Infectio, 26(2), 156–160. doi:10.22354/in.v26i2.1015\nOther collaborative papers from my years at Hospital Universitario San Ignacio are listed on ORCID and in my CV."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Peter Olejua",
+    "section": "",
+    "text": "I am on the job market for postdoctoral and research scientist positions starting in 2027. If my work fits your group, please get in touch.\nI am a Ph.D. candidate in Biostatistics at the Arnold School of Public Health, University of South Carolina, advised by Dr. Alexander McLain. I expect to graduate in May 2027. I live in the Dallas–Fort Worth area of Texas.\nMy work is in functional data analysis and scalable Bayesian methods. Wearable devices record activity minute by minute, for days or weeks, so each person gives a curve instead of a single number. I develop and apply methods that use the whole curve, and I write them as software that other people can use."
+  },
+  {
+    "objectID": "index.html#what-i-work-on",
+    "href": "index.html#what-i-work-on",
+    "title": "Peter Olejua",
+    "section": "What I work on",
+    "text": "What I work on\n\n\nVariational Bayes for high-dimensional regression\nFast Bayesian variable selection with spike-and-slab priors that keeps the uncertainty honest. R package spexvb on CRAN.\n\n\nScalar-on-function regression\nBayesian regression where the predictor is a curve, for example 24-hour activity from a wrist accelerometer.\n\n\nWearable and accelerometer data\nClustering 24-hour activity patterns, processing raw accelerometer data with GGIR, and measuring the bias of non-wear imputation."
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Peter Olejua",
+    "section": "News",
+    "text": "News\n\nJul 2026. Two of my pull requests were merged into the GGIR accelerometer package (#1522, #1523).\n2026. Our paper on walking and cognition in Parkinson’s disease was published in Parkinsonism & Related Disorders (doi).\n2026. Reviewer for Statistics in Medicine.\nFeb 2026. spexvb was released on CRAN.\nSep 2025. Featured in the Arnold School’s I Am Public Health series."
+  },
+  {
+    "objectID": "index.html#where-i-am-going",
+    "href": "index.html#where-i-am-going",
+    "title": "Peter Olejua",
+    "section": "Where I am going",
+    "text": "Where I am going\nI want to see statistical methods used in the world, not only published. My goal is to work with functional data from wearable devices, developing methods and applying my own methods and those of others, so that practitioners can use them. That can happen in academia or in a company that builds wearable devices. More in my own words."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Peter Olejua",
+    "section": "Education",
+    "text": "Education\n\nPh.D. in Biostatistics, University of South Carolina, expected May 2027\nM.Sc. in Biostatistics, Pontificia Universidad Javeriana, Bogotá, Colombia, 2020\nB.Sc. in Mathematics, Universidad Simón Bolívar, Caracas, Venezuela, 2013"
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Parameter exploded variational Bayes for linear regression with high-dimensional variable selection and spike-and-slab priors. Student presentation, SC-ASA Palmetto Symposium (52nd Annual Meeting of the South Carolina Chapter of the American Statistical Association), University of South Carolina, Columbia, SC, April 19, 2024."
+  },
+  {
+    "objectID": "talks.html#section",
+    "href": "talks.html#section",
+    "title": "Talks",
+    "section": "",
+    "text": "Parameter exploded variational Bayes for linear regression with high-dimensional variable selection and spike-and-slab priors. Student presentation, SC-ASA Palmetto Symposium (52nd Annual Meeting of the South Carolina Chapter of the American Statistical Association), University of South Carolina, Columbia, SC, April 19, 2024."
+  },
+  {
+    "objectID": "story.html",
+    "href": "story.html",
+    "title": "In my words",
+    "section": "",
+    "text": "Where do you come from?\nI am the son of Venezuelan and Colombian parents. I studied mathematics at Universidad Simón Bolívar in Caracas, and I grew up between two cultures, which helps me understand people who see things differently.\n\n\nHow did you get from mathematics to health?\nI spent about ten years applying mathematics to real problems. First in banking, measuring credit risk and screening for money laundering. Then I moved to health: I did a master’s in biostatistics in Bogotá and worked as the biostatistician of a university hospital, through the COVID-19 pandemic.\n\n\nWhat do you work on now?\nFunctional data from wearable devices. A wrist accelerometer records how a person moves, minute by minute, for days. Each person gives a curve, not a number. I work on Bayesian methods that can use the whole curve and still run fast, and I write them as R packages so that other people can use them.\n\n\nWhere do you see yourself in five years?\nI want to see the impact of research in the world. Many methods are published and then not used. I would like my methods to be used by practitioners, and I would like to apply good methods, mine or someone else’s, to real problems. That can be in academia or in a company that builds wearable devices. Functional data is an active field, with a lot still to develop, and that is what I want to keep doing.\n\n\nWho shaped you as a researcher?\nMy advisor, Dr. Alexander McLain. As I said in my USC profile:\n\nWhat I admire most about Dr. McLain is his remarkable ability to adapt to anyone at their level in order to help them complete their research. He possesses a unique talent for breaking down complex concepts, providing guidance that is tailored to individual needs, and fostering an environment where curiosity and intellectual growth thrive.\n\n\n\nAnd outside work?\nI dance Kizomba and Semba.\n\nRead the full story: I Am Public Health: Peter Olejua, Arnold School of Public Health, September 2025."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "spexvb (CRAN). Parameter expanded variational Bayes for high-dimensional linear regression with spike-and-slab priors. Written in R and C++ (Rcpp/RcppArmadillo). Source on GitHub.\nspxlvb (GitHub). Parameter exploded variational Bayes for sparse high-dimensional linear regression.\nlmmprobe (CRAN, co-author). Sparse high-dimensional linear mixed models with a partitioned empirical Bayes ECM algorithm. I optimized the package by rewriting its core routines in C++ with OpenMP."
+  },
+  {
+    "objectID": "software.html#r-packages",
+    "href": "software.html#r-packages",
+    "title": "Software",
+    "section": "",
+    "text": "spexvb (CRAN). Parameter expanded variational Bayes for high-dimensional linear regression with spike-and-slab priors. Written in R and C++ (Rcpp/RcppArmadillo). Source on GitHub.\nspxlvb (GitHub). Parameter exploded variational Bayes for sparse high-dimensional linear regression.\nlmmprobe (CRAN, co-author). Sparse high-dimensional linear mixed models with a partitioned empirical Bayes ECM algorithm. I optimized the package by rewriting its core routines in C++ with OpenMP."
+  },
+  {
+    "objectID": "software.html#python",
+    "href": "software.html#python",
+    "title": "Software",
+    "section": "Python",
+    "text": "Python\n\npy-spexvb (under development). Python port of spexvb."
+  },
+  {
+    "objectID": "software.html#contributions",
+    "href": "software.html#contributions",
+    "title": "Software",
+    "section": "Contributions",
+    "text": "Contributions\nGGIR is the R package for processing raw accelerometer data. Two of my pull requests were merged in July 2026:\n\n#1522: fixed an NA/NaN error in g.impute() (non-wear imputation) when a study dates file is used, and the date handling in check_log().\n#1523: fixed activity-log (qwindow) segments that were assigned one day early."
+  }
+]

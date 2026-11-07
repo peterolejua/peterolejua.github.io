@@ -1,0 +1,52 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Peter Olejua"
+  site-url: https://peterolejua.github.io
+  description: "Biostatistician working on functional data, wearable devices, and scalable Bayesian methods."
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: software.qmd
+        text: Software
+      - href: talks.qmd
+        text: Talks
+      - href: story.qmd
+        text: In my words
+      - href: files/Olejua_CV.pdf
+        text: CV
+    right:
+      - icon: github
+        href: https://github.com/peterolejua
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/peterolejua/
+        aria-label: LinkedIn
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=GDKI_XwAAAAJ&hl=en
+        aria-label: Google Scholar
+      - icon: envelope
+        href: mailto:polejua@email.sc.edu
+        aria-label: Email
+  page-footer:
+    left: "© 2026 Peter Olejua"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+    toc: false
+    grid:
+      body-width: 1400px
+      margin-width: 150px
+      sidebar-width: 150px
+    smooth-scroll: true
+    link-external-newwindow: true

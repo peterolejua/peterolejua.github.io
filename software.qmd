@@ -1,0 +1,31 @@
+---
+title: "Software"
+---
+
+## R packages
+
+- **[`spexvb`](https://cran.r-project.org/package=spexvb)** (CRAN). Parameter expanded
+  variational Bayes for high-dimensional linear regression with spike-and-slab priors.
+  Written in R and C++ (Rcpp/RcppArmadillo). Source on
+  [GitHub](https://github.com/peterolejua/spexvb).
+- **[`spxlvb`](https://github.com/peterolejua/spxlvb)** (GitHub). Parameter exploded
+  variational Bayes for sparse high-dimensional linear regression.
+- **[`lmmprobe`](https://cran.r-project.org/package=lmmprobe)** (CRAN, co-author). Sparse
+  high-dimensional linear mixed models with a partitioned empirical Bayes ECM algorithm. I
+  optimized the package by rewriting its core routines in C++ with OpenMP.
+
+## Python
+
+- **[`py-spexvb`](https://github.com/peterolejua/py-spexvb)** (under development). Python port
+  of `spexvb`.
+
+## Contributions
+
+**[GGIR](https://github.com/wadpac/GGIR)** is the R package for processing raw accelerometer
+data. Two of my pull requests were merged in July 2026:
+
+- [#1522](https://github.com/wadpac/GGIR/pull/1522): fixed an NA/NaN error in `g.impute()`
+  (non-wear imputation) when a study dates file is used, and the date handling in
+  `check_log()`.
+- [#1523](https://github.com/wadpac/GGIR/pull/1523): fixed activity-log (`qwindow`) segments
+  that were assigned one day early.

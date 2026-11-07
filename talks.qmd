@@ -1,0 +1,10 @@
+---
+title: "Talks"
+---
+
+## 2024
+
+- **Parameter exploded variational Bayes for linear regression with high-dimensional variable
+  selection and spike-and-slab priors.** Student presentation, SC-ASA Palmetto Symposium (52nd
+  Annual Meeting of the South Carolina Chapter of the American Statistical Association),
+  University of South Carolina, Columbia, SC, April 19, 2024.
