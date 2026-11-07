@@ -22,7 +22,6 @@ My name is in bold. The full record is on [ORCID](https://orcid.org/0000-0002-24
   [Python port](https://github.com/peterolejua/py-spexvb){.btn .btn-outline-primary .btn-sm}
 - **Olejua, P.**, Saha, E., Ghosal, R., Bai, R., and McLain, A. C. Parameter exploded
   variational Bayes for sparse high-dimensional linear regression. In preparation.
-  [R package](https://github.com/peterolejua/spxlvb){.btn .btn-outline-primary .btn-sm}
 
 ## Applied and collaborative research
 

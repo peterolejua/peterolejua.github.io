@@ -8,8 +8,6 @@ title: "Software"
   variational Bayes for high-dimensional linear regression with spike-and-slab priors.
   Written in R and C++ (Rcpp/RcppArmadillo). Source on
   [GitHub](https://github.com/peterolejua/spexvb).
-- **[`spxlvb`](https://github.com/peterolejua/spxlvb)** (GitHub). Parameter exploded
-  variational Bayes for sparse high-dimensional linear regression.
 - **[`lmmprobe`](https://cran.r-project.org/package=lmmprobe)** (CRAN, co-author). Sparse
   high-dimensional linear mixed models with a partitioned empirical Bayes ECM algorithm. I
   optimized the package by rewriting its core routines in C++ with OpenMP.

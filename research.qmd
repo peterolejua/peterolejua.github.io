@@ -14,7 +14,6 @@ methods that stay fast and fix these problems.
 1. **Parameter expanded VB** for spike-and-slab linear regression. Preprint on Research Square;
    under review at *Statistics and Computing*. Software: [`spexvb`](software.qmd) on CRAN.
 2. **Parameter exploded VB** for sparse high-dimensional linear regression. In preparation.
-   Software: [`spxlvb`](https://github.com/peterolejua/spxlvb).
 3. **VB for scalar-on-function regression.** In progress. The predictor is a curve, such as a
    day of accelerometer data, expanded in a basis. This project carries the ideas of the first
    two projects to functional predictors.
